@@ -1,0 +1,97 @@
+*, *::before, *::after {
+  /* Makes it easier to work with widths and heights */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.piano-main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #3a3838;
+}
+
+.white.active {
+  background-color: #b4b0a3;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 3;
+}
+
+.black.active {
+  background-color: #64645f;
+}
+
+.buttons,
+.song-link {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.button {
+  --hue: 20;
+  --saturation: 100%;
+
+  padding: .5rem 1rem;
+  border: none;
+  background-color: hsl(var(--hue), var(--saturation), 50%);
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.record-button {
+  --hue: 0;
+  --saturation: 0%;
+}
+
+.record-button.active {
+  --saturation: 100%;
+}
+
+.button:hover,
+.button:focus {
+  background-color: hsl(var(--hue), var(--saturation), 30%);
+}
+
+.play-button,
+.save-button,
+.song-link {
+  display: none;
+}
+
+.play-button.show,
+.save-button.show,
+.song-link.show {
+  display: block;
+}

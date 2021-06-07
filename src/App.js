@@ -78,12 +78,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0 shadow">
+        <nav className="navbar navbar-dark fixed-top bg-warning flex-md-nowrap p-0 shadow">
           <a
             className="navbar-brand col-sm-3 col-md-2 mr-0"
             href="/"
           >
-            PianoMakerNFT
+            <img className="logo" src="/logo.png" alt="logo" />
           </a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
@@ -96,9 +96,9 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
-                <h1>Song List</h1>
+                <h1 className="mt-3">Song List</h1>
                 <button
-                  className="btn btn-primary btn-lg"
+                  className="btn btn-warning btn-lg"
                   onClick={() => this.mint(window.songs)}
                 >
                   Mint Song as NFT

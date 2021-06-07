@@ -4,3 +4,7 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.logo {
+    width: 180px;
+}

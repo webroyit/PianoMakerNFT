@@ -1,14 +1,20 @@
 # Piano Maker NFT
 Piano recorder where you can store the song in NFT
 
-## What it does?
-- User can play the paino by clicking on the paino keys or pressing the keyboard
-- User can save and playback their piano play
-- User can mint NFT of their song from the piano they play
+### Project Name
+Piano Maker NFT
 
-## Tools
-- HTML
-- CSS
-- Javascript
-- React
-- Solidity
+### Public Repo
+https://github.com/webroyit/PianoMakerNFT
+
+### Video Demo
+https://youtu.be/IVfIRFYVSCo
+
+### Person of contact
+roywebweb123@gmail.com
+
+### Discord ID
+RoyXX#3355
+
+### UnstoppableDomain registered account email address
+roywebweb123@gmail.com
